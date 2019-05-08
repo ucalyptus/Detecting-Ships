@@ -3,7 +3,7 @@
 
 ## Steps involved
 ### 1.Preparing Data
-'''python
+```python
 #output encoding
 y = np_utils.to_categorical(output_data, 2)
 #shuffle all indexes
@@ -13,10 +13,11 @@ X_train = X[indexes].transpose([0,2,3,1])
 y_train = y[indexes]
 #normalization
 X_train = X_train / 255
-'''
+```
 
 ### 2. Network
-'''python
+
+```python
 #network design
 model = Sequential()
 
@@ -41,10 +42,10 @@ model.add(Dense(512, activation='relu'))
 model.add(Dropout(0.5))
 
 model.add(Dense(2, activation='softmax'))
-'''
+```
 
 ### 3. BBox generation code
-'''python
+```python
 def cutting(x, y):
     area_study = np.arange(3*80*80).reshape(3, 80, 80)
     for i in range(80):
@@ -57,6 +58,10 @@ def cutting(x, y):
     area_study = area_study / 255
     sys.stdout.write('\rX:{0} Y:{1}  '.format(x, y))
     return area_study
-'''
+```
 
-## To view full code , [click](https://nbviewer.jupyter.org/github/ucalyptus/Detecting-Ships/blob/master/detecting-ships.ipynb)
+## To view full code , [click here](https://nbviewer.jupyter.org/github/ucalyptus/Detecting-Ships/blob/master/detecting-ships.ipynb)
+
+## [LinkedIn](https://linkedin.com/in/sayantan-das-95b50a125/)
+## [Github](https://github.com/ucalyptus)
+## [Medium](https://medium.com/@sayantandas30011998)
