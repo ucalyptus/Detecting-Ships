@@ -1,37 +1,62 @@
-## Welcome to GitHub Pages
+# Detecting Ships using Deep Learning
+![image](https://cdn-images-1.medium.com/max/1000/1*DcO07U2GAS_AkWQXCzXdQA.png)
 
-You can use the [editor on GitHub](https://github.com/ucalyptus/Detecting-Ships/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Steps involved
+### 1.Preparing Data
+'''
+#output encoding
+y = np_utils.to_categorical(output_data, 2)
+#shuffle all indexes
+indexes = np.arange(4000)
+np.random.shuffle(indexes)
+X_train = X[indexes].transpose([0,2,3,1])
+y_train = y[indexes]
+#normalization
+X_train = X_train / 255
+'''
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### 2. Network
+'''
+#network design
+model = Sequential()
 
-### Markdown
+model.add(Conv2D(32, (3, 3), padding='same', input_shape=(80, 80, 3), activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2))) #40x40
+model.add(Dropout(0.25))
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+model.add(Conv2D(32, (3, 3), padding='same', activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2))) #20x20
+model.add(Dropout(0.25))
 
-```markdown
-Syntax highlighted code block
+model.add(Conv2D(32, (3, 3), padding='same', activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2))) #10x10
+model.add(Dropout(0.25))
 
-# Header 1
-## Header 2
-### Header 3
+model.add(Conv2D(32, (10, 10), padding='same', activation='relu'))
+model.add(MaxPooling2D(pool_size=(2, 2))) #5x5
+model.add(Dropout(0.25))
 
-- Bulleted
-- List
+model.add(Flatten())
+model.add(Dense(512, activation='relu'))
+model.add(Dropout(0.5))
 
-1. Numbered
-2. List
+model.add(Dense(2, activation='softmax'))
+'''
 
-**Bold** and _Italic_ and `Code` text
+### 3. BBox generation code
+'''
+def cutting(x, y):
+    area_study = np.arange(3*80*80).reshape(3, 80, 80)
+    for i in range(80):
+        for j in range(80):
+            area_study[0][i][j] = picture_tensor[0][y+i][x+j]
+            area_study[1][i][j] = picture_tensor[1][y+i][x+j]
+            area_study[2][i][j] = picture_tensor[2][y+i][x+j]
+    area_study = area_study.reshape([-1, 3, 80, 80])
+    area_study = area_study.transpose([0,2,3,1])
+    area_study = area_study / 255
+    sys.stdout.write('\rX:{0} Y:{1}  '.format(x, y))
+    return area_study
+'''
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ucalyptus/Detecting-Ships/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## To view full code , [click](https://nbviewer.jupyter.org/github/ucalyptus/Detecting-Ships/blob/master/detecting-ships.ipynb)
