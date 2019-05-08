@@ -3,7 +3,7 @@
 
 ## Steps involved
 ### 1.Preparing Data
-'''
+'''python
 #output encoding
 y = np_utils.to_categorical(output_data, 2)
 #shuffle all indexes
@@ -16,7 +16,7 @@ X_train = X_train / 255
 '''
 
 ### 2. Network
-'''
+'''python
 #network design
 model = Sequential()
 
@@ -44,7 +44,7 @@ model.add(Dense(2, activation='softmax'))
 '''
 
 ### 3. BBox generation code
-'''
+'''python
 def cutting(x, y):
     area_study = np.arange(3*80*80).reshape(3, 80, 80)
     for i in range(80):
