@@ -3,17 +3,7 @@
 
 ## Steps involved
 ### 1.Preparing Data
-```
-#output encoding
-y = np_utils.to_categorical(output_data, 2)
-#shuffle all indexes
-indexes = np.arange(4000)
-np.random.shuffle(indexes)
-X_train = X[indexes].transpose([0,2,3,1])
-y_train = y[indexes]
-#normalization
-X_train = X_train / 255
-```
+![ship1](https://carbon.now.sh/?bg=rgba(171%252C%2520184%252C%2520195%252C%25201)&t=monokai&wt=none&l=python&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fm=Hack&fs=14px&lh=133%2525&si=false&es=2x&wm=false&code=%252523output%252520encoding%25250Ay%252520%25253D%252520np_utils.to_categorical(output_data%25252C%2525202)%25250A%252523shuffle%252520all%252520indexes%25250Aindexes%252520%25253D%252520np.arange(4000)%25250Anp.random.shuffle(indexes)%25250AX_train%252520%25253D%252520X%25255Bindexes%25255D.transpose(%25255B0%25252C2%25252C3%25252C1%25255D)%25250Ay_train%252520%25253D%252520y%25255Bindexes%25255D%25250A%252523normalization%25250AX_train%252520%25253D%252520X_train%252520%25252F%252520255%25250A)
 
 ### 2. Network
 
