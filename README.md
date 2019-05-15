@@ -4,15 +4,15 @@
 ## Steps involved
 ### 1.Preparing Data
 
-![ship1](ship1.png)
+![ship1](ship1.PNG)
 
 ### 2. Network
 
-![ship2](ship2.png)
+![ship2](ship2.PNG)
 
 ### 3. BBox generation code
 
-![ship3](ship3.png)
+![ship3](ship3.PNG)
 
 ## To view full code , [click here](https://nbviewer.jupyter.org/github/ucalyptus/Detecting-Ships/blob/master/detecting-ships.ipynb)
 
