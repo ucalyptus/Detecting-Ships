@@ -1,4 +1,6 @@
 # Detecting Ships using Deep Learning
+[![HitCount](http://hits.dwyl.io/ucalyptus/Detecting-Ships.svg)](http://hits.dwyl.io/ucalyptus/Detecting-Ships)
+
 ![image](https://cdn-images-1.medium.com/max/1000/1*DcO07U2GAS_AkWQXCzXdQA.png)
 
 
