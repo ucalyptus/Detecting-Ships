@@ -10,6 +10,10 @@
 
 ![alt](ship1.png)
 
+#### Downloading dataset
+
+Dataset can be downloaded [here](https://www.kaggle.com/rhammell/ships-in-satellite-imagery)
+
 ### 2. Network
 
 ![s](ship2.png)
