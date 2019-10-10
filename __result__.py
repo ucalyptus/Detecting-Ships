@@ -87,25 +87,3 @@ def not_near(x, y, s, coordinates):
             result = False
     return result
     
-'''
-def show_ship(x, y, acc, thickness=5, picture_tensor):  
-    for i in range(80):
-        for ch in range(3):
-            for th in range(thickness):
-                picture_tensor[ch][y+i][x-th] = -1
-
-    for i in range(80):
-        for ch in range(3):
-            for th in range(thickness):
-                picture_tensor[ch][y+i][x+th+80] = -1
-        
-    for i in range(80):
-        for ch in range(3):
-            for th in range(thickness):
-                picture_tensor[ch][y-th][x+i] = -1
-        
-    for i in range(80):
-        for ch in range(3):
-            for th in range(thickness):
-                picture_tensor[ch][y+th+80][x+i] = -1
-'''
