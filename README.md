@@ -9,7 +9,9 @@
 
 ### 0. Setting up the enviornment
 
+First, you need to setup your enviornment, i.e., you need to install all the necessary libraries for this project. We will be using Python 3.6 for this project. Clone the repository and run the following command to install all the required libraries.
 
+![alt](resources/ship0.png)
 
 ### 1.Preparing Data
 
