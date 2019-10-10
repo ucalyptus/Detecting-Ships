@@ -6,9 +6,16 @@
 
 
 ## Steps involved
+
+### 0. Setting up the enviornment
+
+First, you need to setup your enviornment, i.e., you need to install all the necessary libraries for this project. We will be using Python 3.6 for this project. Clone the repository and run the following command to install all the required libraries.
+
+![alt](resources/ship0.png)
+
 ### 1.Preparing Data
 
-![alt](ship1.png)
+![alt](resources/ship1.png)
 
 #### Downloading dataset
 
@@ -16,17 +23,19 @@ Dataset can be downloaded [here](https://www.kaggle.com/rhammell/ships-in-satell
 
 ### 2. Network
 
-![s](ship2.png)
+![s](resources/ship2.png)
 
 ### 3. BBox generation code
 
-![sh](ship3.png)
+![sh](resources/ship3.png)
 
-## To view full code , [click here](https://nbviewer.jupyter.org/github/ucalyptus/Detecting-Ships/blob/master/detecting-ships.ipynb)
+#### To view full code , [click here](https://nbviewer.jupyter.org/github/ucalyptus/Detecting-Ships/blob/master/detecting-ships.ipynb)
 
-## [LinkedIn](https://linkedin.com/in/sayantan-das-95b50a125/)
-## [Github](https://github.com/ucalyptus)
-## [Medium](https://medium.com/@sayantandas30011998)
+## About Me
+
+### [LinkedIn](https://linkedin.com/in/sayantan-das-95b50a125/)
+### [Github](https://github.com/ucalyptus)
+### [Medium](https://medium.com/@sayantandas30011998)
 
 # Contribute
 * [Issues](https://github.com/ucalyptus/dirac-dev/issues)
