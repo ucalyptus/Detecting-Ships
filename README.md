@@ -6,6 +6,11 @@
 
 
 ## Steps involved
+
+### 0. Setting up the enviornment
+
+
+
 ### 1.Preparing Data
 
 ![alt](ship1.png)
