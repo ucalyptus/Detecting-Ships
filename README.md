@@ -29,11 +29,13 @@ Dataset can be downloaded [here](https://www.kaggle.com/rhammell/ships-in-satell
 
 ![sh](resources/ship3.png)
 
-## To view full code , [click here](https://nbviewer.jupyter.org/github/ucalyptus/Detecting-Ships/blob/master/detecting-ships.ipynb)
+#### To view full code , [click here](https://nbviewer.jupyter.org/github/ucalyptus/Detecting-Ships/blob/master/detecting-ships.ipynb)
 
-## [LinkedIn](https://linkedin.com/in/sayantan-das-95b50a125/)
-## [Github](https://github.com/ucalyptus)
-## [Medium](https://medium.com/@sayantandas30011998)
+## About Me
+
+### [LinkedIn](https://linkedin.com/in/sayantan-das-95b50a125/)
+### [Github](https://github.com/ucalyptus)
+### [Medium](https://medium.com/@sayantandas30011998)
 
 # Contribute
 * [Issues](https://github.com/ucalyptus/dirac-dev/issues)
