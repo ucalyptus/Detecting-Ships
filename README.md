@@ -13,7 +13,7 @@
 
 ### 1.Preparing Data
 
-![alt](ship1.png)
+![alt](resources/ship1.png)
 
 #### Downloading dataset
 
@@ -21,11 +21,11 @@ Dataset can be downloaded [here](https://www.kaggle.com/rhammell/ships-in-satell
 
 ### 2. Network
 
-![s](ship2.png)
+![s](resources/ship2.png)
 
 ### 3. BBox generation code
 
-![sh](ship3.png)
+![sh](resources/ship3.png)
 
 ## To view full code , [click here](https://nbviewer.jupyter.org/github/ucalyptus/Detecting-Ships/blob/master/detecting-ships.ipynb)
 
