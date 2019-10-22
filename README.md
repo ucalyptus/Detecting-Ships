@@ -5,9 +5,9 @@
 ![image](https://cdn-images-1.medium.com/max/1000/1*DcO07U2GAS_AkWQXCzXdQA.png)
 
 
-## Steps involved
+## Steps Involved
 
-### 0. Setting up the enviornment
+### 0. Setting Up the Enviornment
 
 First, you need to setup your enviornment, i.e., you need to install all the necessary libraries for this project. We will be using Python 3.6 for this project. Clone the repository and run the following command to install all the required libraries.
 
@@ -17,7 +17,7 @@ First, you need to setup your enviornment, i.e., you need to install all the nec
 
 ![alt](resources/ship1.png)
 
-#### Downloading dataset
+#### Downloading Dataset
 
 Dataset can be downloaded [here](https://www.kaggle.com/rhammell/ships-in-satellite-imagery)
 
@@ -25,7 +25,7 @@ Dataset can be downloaded [here](https://www.kaggle.com/rhammell/ships-in-satell
 
 ![s](resources/ship2.png)
 
-### 3. BBox generation code
+### 3. BBox Generation Code
 
 ![sh](resources/ship3.png)
 
